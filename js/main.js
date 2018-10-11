@@ -17,7 +17,7 @@ function renderPortfolios(){
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+                        <img class="img-fluid" src="img/portfolio/${proj["image"]}-thumbnail.jpg" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>${proj["name"]}</h4>
@@ -37,6 +37,8 @@ function onClickOpenModal(id){
     $('#modal-desc').html(proj["desc"]);
     $('#modal-date').html('Date: ' + proj["publishedAt"]);
     $('#modal-client').html('Client: ' + proj["labels"][0]);
-    $('#modal-category').html('category: ' + proj["labels"][1])
+    $('#modal-category').html('category: ' + proj["labels"][1]);
+    $('#modal-image').attr("src",`img/portfolio/${proj["image"]}-full.jpg`);
+    
 
 }
