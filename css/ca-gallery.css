@@ -65,11 +65,12 @@ body {
 .offcanvas-btn {
     z-index: 100000;
     position: fixed;
-    top: 8%;
+    top: 90%;
     left: 3%;
     height: 50px;
     width: 50px;
-    background: #e2cb36;
+    background: #456984;
+
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -85,7 +86,9 @@ body {
     position: fixed;
     height: 100%;
     z-index: 100000;
-    background: red;
+    /* background: red; */
+    background-image: url("../img/about/side.jpg");
+
     width: 30vw;
     left: -30vw;
     transition: all 0.3s ease;
@@ -175,7 +178,7 @@ body {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/about/cover.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -548,7 +551,7 @@ header.masthead .intro-text .intro-heading {
 .team-member img {
     width: 225px;
     height: 225px;
-    border: 7px solid white;
+    border: 0;
 }
 .team-member h4 {
     margin-top: 25px;
@@ -739,4 +742,8 @@ fieldset[disabled] .btn-xl:hover {
 .btn-xl .badge {
     color: #fed136;
     background-color: white;
+}
+
+#contact{
+    color: white;
 }

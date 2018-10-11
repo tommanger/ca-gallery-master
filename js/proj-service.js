@@ -9,9 +9,11 @@ function getProjs() {
 }
 
 function createProjs() {
-    gProjs = [createProj('books-shop1', 'Books Shop1', 'Example1 of site for sell books', 'lorem ipsum1', "projs/book-shop1", Date.now(), 1),
-              createProj('books-shop2', 'Books Shop2', 'Example2 of site for sell books', 'lorem ipsum2', "projs/book-shop2", Date.now(), 5),
-              createProj('books-shop3', 'Books Shop3', 'Example3 of site for sell books', 'lorem ipsum3', "projs/book-shop3", Date.now(), 4)];
+    gProjs = [createProj('minesweeper', 'Minesweeper', 'Minesweeper game', 'lorem ipsum1', "https://tommanger.github.io/Minesweeper-game/", Date.now(), 1),
+              createProj('to-do', 'TODO List', 'Example of TODO', 'lorem ipsum2', "https://tommanger.github.io/Todo-MVC/", Date.now(), 2),
+              createProj('Login-site', 'Login Example', 'Example of Login', 'lorem ipsum3', "https://tommanger.github.io/safe-content/login.html", Date.now(), 3),
+              createProj('Guess-Me', 'Guess Me', 'Guess me game', 'lorem ipsum2', "https://tommanger.github.io/GuessMe/", Date.now(), 4),
+              createProj('books-shop', 'Books Shop', 'Example of site for sell books', 'lorem ipsum3', "https://tommanger.github.io/book-shop/", Date.now(), 5)];
 }
 
 function createProj(id, name, title, desc, url, publishedAt,img) {

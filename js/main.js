@@ -1,15 +1,15 @@
 "use strict"
 
-function init(){
+function init() {
     createProjs();
     renderPortfolios();
 
 }
 
-function renderPortfolios(){
+function renderPortfolios() {
     var projs = getProjs();
 
-    var strHTMLs = projs.map(function(proj){
+    var strHTMLs = projs.map(function (proj) {
         return `<div class="col-md-4 col-sm-6 portfolio-item" onclick="onClickOpenModal('${proj["id"]}')">
                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                         <div class="portfolio-hover">
@@ -30,7 +30,7 @@ function renderPortfolios(){
 
 
 
-function onClickOpenModal(id){
+function onClickOpenModal(id) {
     var proj = getProjById(id);
     $('#modal-name').html(proj['name']);
     $('#modal-title').html(proj['title']);
@@ -38,7 +38,20 @@ function onClickOpenModal(id){
     $('#modal-date').html('Date: ' + proj["publishedAt"]);
     $('#modal-client').html('Client: ' + proj["labels"][0]);
     $('#modal-category').html('category: ' + proj["labels"][1]);
-    $('#modal-image').attr("src",`img/portfolio/${proj["image"]}-full.jpg`);
-    
-
+    $('#modal-image').attr("src", `img/portfolio/${proj["image"]}-full.jpg`);
+    $('#modal-link').prop("href", proj["url"]).attr('target','_blank');
 }
+
+function onSubmitClick() {
+    var $inpEmail = $('#email-input')
+    var $inpSubject = $('#subject-input')
+    var $inpMessage = $('#message-input')
+    window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=tom.manger10@gmail.com&su=${$inpSubject.val()}&body=${$inpMessage.val()}`,
+        '_blank'
+    );
+    $inpEmail.val('');
+    $inpSubject.val('');
+    $inpMessage.val('');
+}
+
