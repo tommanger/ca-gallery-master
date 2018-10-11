@@ -69,7 +69,6 @@ body {
     left: 3%;
     height: 50px;
     width: 50px;
-    background: #456984;
 
     border-radius: 50%;
     display: flex;
@@ -746,4 +745,16 @@ fieldset[disabled] .btn-xl:hover {
 
 #contact{
     color: white;
+}
+
+#contact-img{
+    width: 80px;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+#contact-img:hover{
+    width: 100px;
+    transform: rotate(10deg);
+
 }
