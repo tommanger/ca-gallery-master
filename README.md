@@ -1,8 +1,6 @@
-# [Cosing Academy - Base Gallery]
-A responsive portfolio grid to be used by Coding Academy students
+To see the project: https://tommanger.github.io/ca-gallery-master/
 
-
-## Usage
+Created by Tom Manger Email: tom.manger10@gmail.com linkedin: https://www.linkedin.com/in/tommanger/
 
 ### Basic Usage
 
